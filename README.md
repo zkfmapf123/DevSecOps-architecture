@@ -1,19 +1,13 @@
 # DevSeOps Best Practice Architecture
 
-
-## Todo
-
-- [x] AWS VPC Endpoint
-- [x] CloudTrail Pipeline
-
 ## VPC
 
 ```
     cd infra/networks
 ```
 
-- [ ] vpc
-- [ ] vpc-endpoint
+- [x] vpc
+- [x] vpc-endpoint
 
 ![network](./public/vpc.png)
 
