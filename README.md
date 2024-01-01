@@ -4,10 +4,21 @@
 ## Todo
 
 - [x] AWS VPC Endpoint
-- [ ] CloudTrail Pipeline
-- [ ] Automatino AccessKey, SecretKey
+- [x] CloudTrail Pipeline
 
 ## VPC
+
+```
+    cd infra/networks
+```
+
+- [ ] vpc
+- [ ] vpc-endpoint
+
+![network](./public/vpc.png)
+
+- 기본적인 3-tier architecture 입니다.
+- S3, DynamoDB 같은 경우 Private Subnet 에서의 통신은 VPC-Endpoint (Gateway, Interface) 를 사용하여 통신합니다.
 
 ## Cloud-Trail-Pipelin (계정 감사용)
 
