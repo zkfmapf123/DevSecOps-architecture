@@ -1,9 +1,3 @@
-
-provider "aws" {
-  profile = "root"
-  region  = "ap-northeast-2"
-}
-
 module "default-3-tier" {
   source = "zkfmapf123/vpc3tier/lee"
 
