@@ -1,6 +1,6 @@
 # DevSeOps Best Practice Architecture
 
-## VPC
+## 1. VPC
 
 ```
     cd infra/networks
@@ -14,7 +14,7 @@
 - 기본적인 3-tier architecture 입니다.
 - S3, DynamoDB 같은 경우 Private Subnet 에서의 통신은 VPC-Endpoint (Gateway, Interface) 를 사용하여 통신합니다.
 
-## Cloud-Trail-Pipelin (계정 감사용)
+## 2. Cloud-Trail-Pipelin (계정 감사용)
 
 ```
     cd infra/cloudtrail-pipeline
@@ -27,6 +27,16 @@
 - [x] AWS Chatbot to Slack
 
 ![cloud-trail](./public/cloud-trail.png)
+
+## 3. EC2 접근방법
+
+- 1. Teleport를 사용한 EC2 접근
+    - <a href="https://github.com/zkfmapf123/DevSecOps-Teleport"> Teleport </a>
+    ![bastion](./public/bastion.png)
+
+- 2. Session Manager + GoSSM 을 사용한 EC2 접근 **
+    - <a href="https://github.com/aws-donggyus-lab/aws_vpc_pack/tree/master/session-manager"> SSM Manager </a>
+    ![ssm](./public/ssm.png)
 
 
 ## Reference
